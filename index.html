@@ -12,119 +12,125 @@
       background-color: #3A3A3A;
       color: #bfbfbf;
       font-family: '04b03', monospace;
-      margin: 20px; /* Remove default margin */
-      padding: 0; /* Remove default padding */
+      margin: 20px;
+      padding: 0;
     }
 
-    /* Add more space between headers
-    h1,
-    h2,
-    p {
-      margin-bottom: 20px;
-    } */
-
-    /* Center the contents of the table and add padding */
     table {
-      width: 80%; /* Adjust the width as needed */
-      margin: 20px auto 20px auto; /* Center the table and add top and bottom margins */
+      width: 80%;
+      margin: 20px auto 20px auto; 
       text-align: center;
       border-collapse: collapse;
-      border: 3px solid #6c757d; /* Thicker border and different color */
+      border: 3px solid #6c757d;
     }
 
     table th,
     table td {
       padding: 10px;
-      border: 3px solid #6c757d; /* Thicker border and different color */
+      border: 3px solid #6c757d;
     }
 
-    /* Set a fixed width for the left column */
     td:first-child {
       width: 150px;
     }
 
-    /* Position the image in the top-right corner */
     .fixed-image {
       position: fixed;
-      top: -50px; /* Move the image down by 30 pixels */
+      top: -40px;
       right: 0;
-      width: 250px; /* Increase the width by a factor of 3 */
-      height: 250px; /* Increase the height by a factor of 3 */
+      width: 250px;
+      height: 250px;
     }
 
-    /* Center the Games header */
     h2 {
-      margin-left: auto;
-      margin-right: auto;
       text-align: center;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    .button-external {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
     }
   </style>
 </head>
 
 <body>
-  <!-- Fixed Image in the Top Right Corner -->
   <img class="fixed-image" src="croslearlogo.png" alt="Fixed Image" width="300" height="300">
 
   <h1>Hello World</h1>
   <p>I'm hosted with GitHub Pages.</p>
 
-  <!-- Added Header with more space -->
   <h2>Games</h2>
 
-  <!-- Expanded and Centered 2x2 Table with Padding and Margins -->
   <table>
     <tr>
-      <!-- Top Left Panel with Image and Text -->
       <td>
         <img src="matlogotrans.png" alt="Game 1 Image" width="150" height="150">
         <p>Materialism</p>
       </td>
-
-      <!-- Top Right Panel with Description -->
       <td>
         <p>I am a description for Game 1.</p>
       </td>
     </tr>
 
     <tr>
-      <!-- Bottom Left Panel with Image and Text -->
       <td>
         <img src="croslearlogo.png" alt="Game 2 Image" width="150" height="150">
         <p>I am a game</p>
       </td>
-
-      <!-- Bottom Right Panel with Description -->
       <td>
         <p>I am a description for Game 2.</p>
       </td>
     </tr>
 
     <tr>
-      <!-- Bottom Left Panel with Image and Text -->
       <td>
         <img src="croslearlogo.png" alt="Game 2 Image" width="150" height="150">
         <p>I am a game</p>
       </td>
-
-      <!-- Bottom Right Panel with Description -->
       <td>
         <p>I am a description for Game 2.</p>
       </td>
     </tr>
 
     <tr>
-      <!-- Bottom Left Panel with Image and Text -->
       <td>
         <img src="croslearlogo.png" alt="Game 2 Image" width="150" height="150">
         <p>I am a game</p>
       </td>
-
-      <!-- Bottom Right Panel with Description -->
       <td>
         <p>I am a description for Game 2.</p>
       </td>
     </tr>
   </table>
+
+  <!-- Button linking to another HTML file -->
+  <div class="button-container">
+    <a href="another_page.html" class="button">Go to Another Page</a>
+    
+    <!-- Button linking to Google -->
+    <a href="https://www.google.com" class="button-external">Go to Google</a>
+  </div>
 </body>
 
 </html>
